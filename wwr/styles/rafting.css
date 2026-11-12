@@ -1,0 +1,156 @@
+:root {
+    --primary-color: #055a05;
+    --secondary-color: #f4a261;
+    --accent1-color: #264653;
+    --accent2-color: #e9c46a;
+
+    --heading-font: Georgia, serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+}
+
+header, main, footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    padding: 10px;
+}
+
+header > img {
+    width: 120px;
+    height: auto;
+}
+
+header nav {
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--accent1-color);
+    font-weight: bold;
+}
+
+h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+nav, p, section, article {
+    margin: 16px;
+    padding: 8px;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    background-color: var(--accent1-color);
+    color: white;
+    opacity: 0.7;
+}
+
+.hero article {
+    position: absolute;
+    top: 90px;
+    left: 2%;
+    width: 96%;
+    margin: 0;
+    padding: 15px;
+    background-color: var(--accent2-color);
+    color: black;
+    opacity: 0.95;
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.hero article p {
+    margin: 0;
+    padding: 0;
+}
+
+.history, .adventures {
+    margin: 20px 0;
+    padding: 15px;
+}
+
+.history h2, .adventures h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.history p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--accent1-color);
+    padding: 15px;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 35px;
+    height: 35px;
+}
